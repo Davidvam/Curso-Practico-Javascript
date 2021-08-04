@@ -53,3 +53,64 @@ return (radio * radio) * PI;
 };
 
 console.groupEnd(); 
+
+//Interactuamos con HTML
+
+/*Para buscar elementos de nuestro html utilizamos
+
+    document.getElementById("Nombre del input")  --> Esto nos mostrara una etiqueta de html
+
+*/
+
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+
+}
+
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert(area);
+}
+
+//Triangulo 
+
+function calcularPerimetroTriangulo(){
+    const input = document.getElementById("inputTriangulo");
+    const value = input.value;
+
+    const perimetro = perimetroTriangulo(value);
+    alert (perimetro)
+}
+
+function calcularAreaTriangulo(){
+    const input = document.getElementById("inputTriangulo");
+    const value = input.value;
+
+    const area = areaTriangulo(value);
+    alert (area);
+}
+
+//Circulo 
+
+function calcularPerimetroCirculo(){
+    const input = document.getElementById("inputCirculo");
+    const value = input.value 
+
+    const perimetro =  perimetroCirculo(value); 
+    alert(perimetro);
+}
+function calcularAreaCirculo(){
+    const input = document.getElementById("inputCirculo");
+    const value = input.value 
+
+    const area = areaCirculo(value);
+    alert(area);
+}
